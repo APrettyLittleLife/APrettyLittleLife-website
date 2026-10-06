@@ -1,0 +1,23 @@
+{
+  "business": {
+    "email": "",
+    "instagram": "",
+    "facebook": "",
+    "formEndpoint": "",
+    "siteUrl": "https://aprettylittlelife.github.io/APrettyLittleLife-website/"
+  },
+  "products": [
+    {
+      "id": "autumn-harvest",
+      "name": "Autumn Harvest Wood Flower Cornucopia Arrangement",
+      "price": 35,
+      "dimensions": "Approximately 8\u2033H \u00d7 8\u2033W \u00d7 13\u2033D",
+      "description": "Bring the warmth of fall indoors with this handcrafted wood flower arrangement featuring rich burgundy, burnt orange and golden yellow tones accented with greenery, raffia and autumn-inspired details. Designed as a lasting alternative to fresh flowers, this one-of-a-kind arrangement adds a cozy seasonal touch to a dining table, entryway, mantel or fall display. Handcrafted by A Pretty Little Life. Only one available.",
+      "available": true,
+      "squareUrl": "",
+      "photos": []
+    }
+  ],
+  "events": [],
+  "gallery": []
+}
