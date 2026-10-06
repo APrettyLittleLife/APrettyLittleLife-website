@@ -2,3 +2,21 @@
 
 /* Boutique palette: subdued aqua meets white, soft pink and navy. */
 footer a,footer .brand{color:#ffffff}footer .text-link{color:#b5e6e7}footer :focus-visible{outline-color:#b5e6e7}.menu-toggle{color:var(--ink)}.hero h1 em{color:var(--ink)}.header nav a:hover,.header nav a[aria-current]{text-decoration-color:var(--aqua)}.skip{color:var(--aqua)}
+
+/* Homepage-only photographic hero. Existing page sections remain unchanged. */
+.hero-photo{position:relative;isolation:isolate;min-height:650px;display:grid;align-items:center;background:#fff;overflow:hidden}
+.hero-photo-media{position:absolute;inset:0;z-index:-2;display:block}
+.hero-photo-media img{width:100%;height:100%;display:block;object-fit:cover;object-position:70% 50%}
+.hero-photo:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.91) 32%,rgba(255,255,255,.68) 43%,rgba(255,255,255,0) 57%);pointer-events:none}
+.hero-photo-inner{padding-top:65px;padding-bottom:65px}
+.hero-photo-copy{width:44%;max-width:540px}
+.hero-photo-copy h1{font-size:clamp(2.9rem,4.45vw,4.8rem);color:var(--ink)}
+.hero-photo-copy h1 em{color:#a4466c;font-weight:400}
+.hero-photo-copy .eyebrow{color:var(--ink);font-size:10px}
+.hero-photo-copy .lede{color:var(--ink);font-size:18px}
+.hero-photo-copy>p:not(.eyebrow){max-width:450px}
+.hero-photo-copy .actions{gap:22px}
+@media(min-width:1680px){.hero-photo{min-height:740px}.hero-photo-media img{object-position:70% 48%}}
+@media(max-width:1100px) and (min-width:901px){.hero-photo{min-height:620px}.hero-photo-copy{width:46%}.hero-photo-copy h1{font-size:3rem}.hero-photo-copy .actions{gap:18px}.hero-photo-copy .eyebrow{letter-spacing:.1em}}
+@media(max-width:900px){.hero-photo{display:flex;flex-direction:column;min-height:0;overflow:visible}.hero-photo-media{position:relative;inset:auto;z-index:auto;width:100%;height:auto;aspect-ratio:1672/941;order:0}.hero-photo-media img{object-position:82% 45%}.hero-photo:before{display:none}.hero-photo-inner{order:1;padding-top:38px;padding-bottom:45px}.hero-photo-copy{width:100%;max-width:680px}.hero-photo-copy h1{font-size:clamp(2.8rem,6vw,4rem)}.hero-photo-copy>p:not(.eyebrow){max-width:560px}}
+@media(max-width:480px){.hero-photo-media{height:300px}.hero-photo-media img{object-position:79% 45%}.hero-photo-copy h1{font-size:2.8rem}.hero-photo-copy .eyebrow{font-size:9px;letter-spacing:.11em}.hero-photo-copy .actions{gap:20px}}
