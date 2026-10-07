@@ -15,7 +15,12 @@
       "description": "Bring the warmth of fall indoors with this handcrafted wood flower arrangement featuring rich burgundy, burnt orange and golden yellow tones accented with greenery, raffia and autumn-inspired details. Designed as a lasting alternative to fresh flowers, this one-of-a-kind arrangement adds a cozy seasonal touch to a dining table, entryway, mantel or fall display. Handcrafted by A Pretty Little Life. Only one available.",
       "available": true,
       "squareUrl": "",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/autumn-harvest-wood-flower-cornucopia.jpg",
+          "alt": "Autumn Harvest cornucopia arrangement with burgundy, orange and golden-yellow wood flowers, greenery, raffia and a small pumpkin."
+        }
+      ]
     }
   ],
   "events": [],
