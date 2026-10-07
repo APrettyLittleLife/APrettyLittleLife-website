@@ -8,7 +8,7 @@ document.querySelector('[data-year]').textContent = new Date().getFullYear();
 const menu = document.querySelector('.menu-toggle'); menu.addEventListener('click', () => menu.setAttribute('aria-expanded', String(menu.getAttribute('aria-expanded') !== 'true')));
 document.addEventListener('keydown', e => {if(e.key === 'Escape') {menu.setAttribute('aria-expanded','false'); menu.focus();}});
 async function init() {
- const res = await fetch('assets/content.json'); if(!res.ok) throw new Error('Content could not be loaded'); const data = await res.json();
+ const res = await fetch('assets/content.json', {cache: 'no-cache'}); if(!res.ok) throw new Error('Content could not be loaded'); const data = await res.json();
  const business = data.business;
  for(const host of document.querySelectorAll('[data-products]')) {
   const products = data.products.filter(p => p.available || location.pathname.endsWith('/shop.html'));
